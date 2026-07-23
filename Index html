@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Before You Go...</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="stars"></div>
+
+    <!-- OPENING SCREEN -->
+    <section class="screen intro-screen" id="intro">
+
+        <div class="intro-content">
+
+            <p class="tiny-text">HEY, ROHIT...</p>
+
+            <h1>
+                Wait.<br>
+                Don't leave yet. 🥺
+            </h1>
+
+            <p class="intro-text">
+                I made something for you.
+                <br>
+                It's not a long paragraph, I promise. 😭
+            </p>
+
+            <button class="main-button" onclick="startJourney()">
+                Fine, I'll look. 🙄
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- MAIN WEBSITE -->
+    <main id="mainContent" class="hidden">
+
+
+        <!-- SECTION 1 -->
+        <section class="section hero-section">
+
+            <div class="floating-heart heart-one">♡</div>
+            <div class="floating-heart heart-two">♡</div>
+            <div class="floating-heart heart-three">♡</div>
+
+            <p class="tiny-text">NILANJANA × ROHIT</p>
+
+            <h2>
+                Almost two years.
+                <br>
+                That's a lot of memories.
+            </h2>
+
+            <p class="section-text">
+                And honestly...
+                <br>
+                I don't think a difficult moment should be powerful enough
+                to erase all of them.
+            </p>
+
+            <button class="scroll-button" onclick="scrollToSection('memories')">
+                Come with me ↓
+            </button>
+
+        </section>
+
+
+        <!-- MEMORIES -->
+        <section class="section memories-section" id="memories">
+
+            <p class="tiny-text">A LITTLE TRIP DOWN MEMORY LANE</p>
+
+            <h2>
+                Look what we've done. 🥹
+            </h2>
+
+            <p class="section-text">
+                Two idiots.
+                <br>
+                Almost two years.
+                <br>
+                Somehow still here.
+            </p>
+
+
+            <div class="photo-grid">
+
+                <div class="photo-card">
+                    <img src="1000036881.jpg" alt="A memory of Nilanjana and Rohit">
+                    <div class="photo-caption">
+                        <span>01</span>
+                        <p>One of those moments worth remembering.</p>
+                    </div>
+                </div>
+
+
+                <div class="photo-card">
+                    <img src="1000030695.jpg" alt="A memory of Nilanjana and Rohit">
+                    <div class="photo-caption">
+                        <span>02</span>
+                        <p>Because apparently we actually have good memories.</p>
+                    </div>
+                </div>
+
+
+                <div class="photo-card">
+                    <img src="1000018608.jpg" alt="A memory of Nilanjana and Rohit">
+                    <div class="photo-caption">
+                        <span>03</span>
+                        <p>And this one deserves to stay here too.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="scroll-button" onclick="scrollToSection('truth')">
+                Okay... now the serious part ↓
+            </button>
+
+        </section>
+
+
+        <!-- HONEST SECTION -->
+        <section class="section truth-section" id="truth">
+
+            <div class="letter-card">
+
+                <div class="letter-top">
+                    <span>💌</span>
+                    <span>Something I wanted you to know</span>
+                </div>
+
+                <h2>
+                    I'm not going to pretend
+                    everything is perfect.
+                </h2>
+
+                <div class="letter">
+
+                    <p>
+                        I know things haven't been perfect between us.
+                    </p>
+
+                    <p>
+                        And I know there have been moments where I could
+                        have done better.
+                    </p>
+
+                    <p>
+                        I'm sorry for the times I made you feel like you
+                        weren't important to me.
+                    </p>
+
+                    <p>
+                        But I also want you to know something.
+                    </p>
+
+                    <p class="highlight">
+                        Just because I can't always be there
+                        doesn't mean I don't care.
+                    </p>
+
+                    <p>
+                        Sometimes I won't be available.
+                        Sometimes I'll be caught up in my own life.
+                        Sometimes I'll mess things up.
+                    </p>
+
+                    <p>
+                        But none of that changes the fact that
+                        our friendship means something to me.
+                    </p>
+
+                    <p>
+                        And I really don't want a difficult moment
+                        to become the ending of something that gave us
+                        almost two years of memories.
+                    </p>
+
+                    <p class="signature">
+                        - Nilanjana ❤️
+                    </p>
+
+                </div>
+
+            </div>
+
+            <button class="scroll-button" onclick="scrollToSection('question')">
+                One last thing... ↓
+            </button>
+
+        </section>
+
+
+        <!-- INTERACTIVE QUESTION -->
+        <section class="section question-section" id="question">
+
+            <div class="question-card" id="questionCard">
+
+                <p class="tiny-text">ROHIT, BE HONEST...</p>
+
+                <h2>
+                    Are you really going to
+                    throw all of this away?
+                </h2>
+
+                <p>
+                    I'm not asking you to forget everything.
+                    <br>
+                    I'm not asking you to forgive me instantly.
+                    <br><br>
+                    I'm just asking you to think about it.
+                </p>
+
+                <div class="choice-buttons">
+
+                    <button class="choice yes-button" onclick="chooseYes()">
+                        Yes. 😐
+                    </button>
+
+                    <button class="choice no-button" onclick="chooseNo()">
+                        No, let's talk. 🫂
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="response hidden" id="yesResponse">
+
+                <div class="response-icon">🥺</div>
+
+                <h2>
+                    Okay...
+                </h2>
+
+                <p>
+                    I'm not going to force you to stay.
+                </p>
+
+                <p>
+                    I just hope that someday,
+                    when you look back at these two years,
+                    you'll remember more than just the difficult moments.
+                </p>
+
+                <p>
+                    Because I will.
+                </p>
+
+                <button class="main-button" onclick="showFinal()">
+                    I understand ❤️
+                </button>
+
+            </div>
+
+
+            <div class="response hidden" id="noResponse">
+
+                <div class="response-icon">😭❤️</div>
+
+                <h2>
+                    GOOD.
+                </h2>
+
+                <p>
+                    Because honestly, I wasn't prepared
+                    for this friendship to end either.
+                </p>
+
+                <p>
+                    So let's stop being dramatic for five minutes
+                    and actually talk.
+                </p>
+
+                <p class="small-note">
+                    (Yes, I'm aware I made an entire website
+                    instead of just saying this normally.)
+                </p>
+
+                <button class="main-button" onclick="showFinal()">
+                    Okay, let's talk. 🫂
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL SECTION -->
+        <section class="section final-section" id="final">
+
+            <div class="final-content">
+
+                <div class="final-heart">
+                    ❤️
+                </div>
+
+                <p class="tiny-text">
+                    BEFORE YOU GO...
+                </p>
+
+                <h2>
+                    I don't want
+                    <br>
+                    this to be the end.
+                </h2>
+
+                <p class="final-message">
+
+                    I don't need you to forgive me right now.
+
+                    <br><br>
+
+                    I don't need you to forget everything that happened.
+
+                    <br><br>
+
+                    I just don't want us to make a permanent decision
+                    about our friendship while we're both hurt.
+
+                    <br><br>
+
+                    We've been friends for almost two years, Rohit.
+
+                    <br><br>
+
+                    That's too many conversations,
+                    too many memories,
+                    too many stupid moments,
+                    and too much history for me to simply pretend
+                    none of it mattered.
+
+                    <br><br>
+
+                    So whenever you're ready...
+
+                </p>
+
+                <h3>
+                    I'm here.
+                </h3>
+
+                <p class="from">
+                    — Nilanjana ❤️
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+
+            <p>
+                Made by Nilanjana
+            </p>
+
+            <span>
+                for Rohit
+            </span>
+
+            <p class="footer-small">
+                Almost two years and counting... 🌙
+            </p>
+
+        </footer>
+
+
+    </main>
+
+
+    <!-- IMAGE LIGHTBOX -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+
+        <span class="close-lightbox">
+            ×
+        </span>
+
+        <img id="lightboxImage" src="" alt="Enlarged memory">
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
